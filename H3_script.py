@@ -39,8 +39,8 @@ class MyClass(object):
             f.write("\tnet_io_counters:" + self.net_count + "\n")
             f.write("\tdatetime:" + self.boot + "\n")
             print(str(self.counter))
-            time.sleep(config.sleep)
-            if self.counter == config.checks:
+            time.sleep(config.SLEEP)
+            if self.counter == config.CHECKS:
                 f.close()
                 break
             self.counter += 1
@@ -60,8 +60,8 @@ class MyClass(object):
             }
             json.dump(data, f, indent=4, ensure_ascii=False)
             print(str(self.counter))
-            time.sleep(config.sleep)
-            if self.counter == config.checks:
+            time.sleep(config.SLEEP)
+            if self.counter == config.CHECKS:
                 f.close()
                 break
             self.counter += 1
@@ -69,7 +69,7 @@ class MyClass(object):
 
 TRULALA = MyClass()
 
-if config.Ftype == "txt":
+if config.FTYPE == "txt":
     TRULALA.Writefile()
 else:
     TRULALA.WriteJson()
