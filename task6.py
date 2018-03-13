@@ -59,6 +59,7 @@ class MyClass(object):
         json.dump(data, f, indent=4, ensure_ascii=False)
         f.close()
         print("json file was created")
+        return self.version[:5]
 
     def WriteYaml(self):
         '''write to yaml file'''
@@ -77,6 +78,7 @@ class MyClass(object):
         print("yaml file was created")
 
 
-trulala = MyClass()
-trulala.WriteYaml()
-trulala.WriteJson()
+if __name__ == "__main__":
+    trulala = MyClass()
+    trulala.WriteYaml()
+    trulala.WriteJson()
