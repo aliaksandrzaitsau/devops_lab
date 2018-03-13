@@ -1,18 +1,18 @@
-"""task6"""
+"""homework6"""
 # pylint: disable=invalid-name
 # pylint: disable=line-too-long
 import sys
 import site
 import os
 import json
-import pip
 import yaml
+import pip
 
 
 class MyClass(object):
     """class information"""
     def startup(self):
-        """Self names"""
+        """startfiles"""
         self.version = None
         self.virtual_env = None
         self.exec_loc = None
@@ -28,7 +28,8 @@ class MyClass(object):
         self.exec_loc = str(sys.executable)
         self.pip_loc = str(pip.__path__)
         self.path = str(os.environ['PATH'])
-        self.packages = sorted(["%s==%s" % (i.key, i.version) for i in pip.get_installed_distributions()])
+        self.packages = sorted(["%s==%s" % (i.key, i.version)
+                                for i in pip.get_installed_distributions()])
         self.site_pack_loc = str(site.getsitepackages())
 
 # def Writefile(self):
