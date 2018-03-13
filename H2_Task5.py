@@ -1,10 +1,9 @@
-
-
-list='qwertyuiopasdfghjklzxcvbnm'
-print ("enter any letter:")
-a=str(input()) 
-b=list.find(a)
-if a == "m":
-	print("q")
+"""homework"""
+LIST = 'qwertyuiopasdfghjklzxcvbnm'
+print("enter any letter:")
+A = str(input())
+B = LIST.find(A)
+if A == "m":
+    print("q")
 else:
-	print(list[b+1])
+    print(LIST[B+1])
