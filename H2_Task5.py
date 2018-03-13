@@ -1,4 +1,5 @@
 """homework"""
+# pylint: disable=invalid-name
 LIST = 'qwertyuiopasdfghjklzxcvbnm'
 print("enter any letter:")
 A = str(input())
