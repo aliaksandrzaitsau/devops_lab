@@ -1,13 +1,12 @@
-
-
-print ("check your first number:")
-x=(int(input()))
-print ("check your second number:")
-y=(int(input()))
-
-def selfDividingNumbers(left, right):
+"""homework"""
+print("check your first number:")
+X = (int(input()))
+print("check your second number:")
+Y = (int(input()))
+def self_numbers(left, right):
+    """write here"""
     def self_dividing(n):
-
+        """something"""
         for a in str(n):
             if a == '0' or n % int(a) > 0:
                 return False
@@ -16,8 +15,6 @@ def selfDividingNumbers(left, right):
     for n in range(left, right + 1):
         if self_dividing(n):
             ans.append(n)
-
     return ans
 print("self dividing numbers are:")
-print(selfDividingNumbers(x,y))
-
+print(self_numbers(X, Y))
