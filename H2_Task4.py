@@ -1,4 +1,5 @@
 """homework"""
+# pylint: disable=invalid-name
 from collections import OrderedDict
 WORDS = OrderedDict()
 A = int(input())
