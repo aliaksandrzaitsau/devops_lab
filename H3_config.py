@@ -1,8 +1,9 @@
+"""config for H3_script"""
 # sleeptime(sec)
-sleep = 1
+SLEEP = 3
 
 # count_check
-checks = 3
+CHECKS = 4
 
 # type_file (txt or json)
-Ftype = 'json'
+FTYPE = 'json'
